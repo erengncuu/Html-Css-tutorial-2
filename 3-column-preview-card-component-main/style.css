@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+padding: 20px;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    .container{
+        border-radius: 15px;
+        overflow: hidden;
+        .box{
+            height: 250px;
+            padding: 35px;
+            display: flex;
+            align-items:flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            h2{
+                color: hsl(0, 0%, 95%);
+                font-family: 'Big Shoulders Display';
+                font-size: 35px;
+            }
+            .content-box{
+                p{
+                    color: hsla(0, 0%, 100%, 0.75);
+                    font-family: 'Lexend Deca';
+                    font-size: 12px;
+                }
+            }
+            button{
+                margin-top: 20px;
+                width: 100px;
+                height: 35px;
+                border-radius: 30px;
+                border:2px solid hsl(0, 0%, 95%);
+                background-color: none;
+                font-family: 'Lexend Deca';
+                font-size: 12px;
+            }
+            
+        }
+        .sedan{
+            background-color: hsl(31, 77%, 52%);
+            button{
+                color: hsl(31, 77%, 52%);
+            }
+            button:hover{
+                background-color:hsl(31, 77%, 52%) ;
+                color: hsl(0, 0%, 95%);
+            }
+        }
+        .SUV{
+            background-color: hsl(184, 100%, 22%);
+            button{
+                color: hsl(184, 100%, 22%);
+            }
+            button:hover{
+                background-color:hsl(184, 100%, 22%) ;
+                color: hsl(0, 0%, 95%);
+            }
+        }
+        .Luxury{
+            background-color: hsl(179, 100%, 13%);
+            button{
+                color:hsl(179, 100%, 13%);
+            }
+            button:hover{
+                background-color: hsl(179, 100%, 13%) ;
+                color:hsl(0, 0%, 95%);
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container{
+        display:flex;
+
+
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
